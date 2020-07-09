@@ -1,15 +1,8 @@
-//
-//  main.cpp
-//  TravelAgency
-//
-//  Created by Vadim Stishenok on 09.07.2020.
-//  Copyright © 2020 Vadim Stishenok. All rights reserved.
-//
+#include "headers.h"
 
-#include <iostream>
+int main()
+{
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    system("pause");
     return 0;
 }

@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		AB9CE3C724B6FAD4000A4D28 /* TravelAgency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TravelAgency; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9CE3CA24B6FAD4000A4D28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB9CE3D124B6FB68000A4D28 /* headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.h; sourceTree = "<group>"; };
+		AB9CE3D224B6FBB2000A4D28 /* bus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bus.h; sourceTree = "<group>"; };
+		AB9CE3D324B6FBCF000A4D28 /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				AB9CE3CA24B6FAD4000A4D28 /* main.cpp */,
+				AB9CE3D124B6FB68000A4D28 /* headers.h */,
+				AB9CE3D224B6FBB2000A4D28 /* bus.h */,
+				AB9CE3D324B6FBCF000A4D28 /* route.h */,
 			);
 			path = TravelAgency;
 			sourceTree = "<group>";
