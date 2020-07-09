@@ -28,6 +28,8 @@
 		AB9CE3D124B6FB68000A4D28 /* headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.h; sourceTree = "<group>"; };
 		AB9CE3D224B6FBB2000A4D28 /* bus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bus.h; sourceTree = "<group>"; };
 		AB9CE3D324B6FBCF000A4D28 /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		AB9CE3D424B70445000A4D28 /* done_routes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = done_routes.h; sourceTree = "<group>"; };
+		AB9CE3D524B70BF6000A4D28 /* travel_agency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = travel_agency.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,8 @@
 				AB9CE3D124B6FB68000A4D28 /* headers.h */,
 				AB9CE3D224B6FBB2000A4D28 /* bus.h */,
 				AB9CE3D324B6FBCF000A4D28 /* route.h */,
+				AB9CE3D424B70445000A4D28 /* done_routes.h */,
+				AB9CE3D524B70BF6000A4D28 /* travel_agency.h */,
 			);
 			path = TravelAgency;
 			sourceTree = "<group>";
