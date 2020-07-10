@@ -2,31 +2,25 @@
 
 int main()
 {
-    TravelAgency agency;
-    std::ifstream file1("bus.txt");
-    std::ifstream file2("route.txt");
-    agency.readBuses(file1);
-    agency.readRoutes(file2);
-    agency.printBuses(std::cout);
-    agency.printRoutes(std::cout);
-    agency.addDoneRoute("name2");
-    
-    
+    TourAgency agency;
+    std::ifstream in("bus.txt");
+    agency.readBuses(in);
+    in.close();
+    in.open("route.txt");
+    agency.readRoutes(in);
     std::string str;
-    bool flag = true;
-    
-    while (true)
+    bool flag=false;
+    while (!flag)
     {
-        std::cout << "Enter name of route: ";
+        std::cout << "Enter name of rout " << std::endl;
         std::cin >> str;
-        agency.addDoneRoute(str);
-        
+        agency.addCompletedRoute(str);
+        std::cout << "End? " << std::endl;
         std::cin >> flag;
     }
-    
-    agency.printDoneRoute(std::cout);
+    agency.printCompletedRoutes(std::cout);
+    std::cout << "Enter name of  info rout " << std::endl;
     std::cin >> str;
     agency.findInfo(str);
-    system("pause");
     return 0;
 }

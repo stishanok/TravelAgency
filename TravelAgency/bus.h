@@ -4,10 +4,10 @@
 class Bus
 {
 private:
-    std::string number;
-    std::string name;
-    double mileage;
-    size_t maxPassangers;
+    std::string number; //номер
+    std::string name; //марка
+    double mileage; //пробег
+    size_t maxPassengers; //максимальное число пассажиров
 public:
     Bus() = default;
     ~Bus() = default;
@@ -15,21 +15,23 @@ public:
     std::string getNumber() const { return number; }
     std::string getBusName() const { return name; }
     double getMileage() const { return mileage; }
-    size_t getMaxPassangers() const { return maxPassangers; }
-    void setNumber(std::string _number) { number = _number; }
-    friend std::istream& operator>>(std::istream&, Bus&);
-    friend std::ostream& operator<<(std::ostream&, const Bus&);
-    bool operator==(const Bus&) const;
+    size_t getMaxPasangers() const { return maxPassengers; }
+    void setNumber(std::string n) { number = n; }
+    friend std::istream& operator>>(std::istream& in, Bus&);
+    friend std::ostream& operator<<(std::ostream& out, const Bus&);
+    const bool operator==(const Bus&) const; //дописать
 };
-
-std::istream& operator>>(std::istream& in, Bus& bus)
-{
-    in >> bus.number >> bus.name >> bus.mileage >> bus.maxPassangers;
-    return in;
-}
 
 std::ostream& operator<<(std::ostream& out, const Bus& bus)
 {
-    out << "Number: " << bus.getNumber() << " Name: " << bus.getBusName() << " Mileage: " << bus.getMileage() << " Passagers: " << bus.getMaxPassangers();
+    out << "Bus number: "<< bus.getNumber()
+    << " Bus name: " << bus.getBusName()
+    << " Max passengers: " << bus.getMaxPasangers();
     return out;
+}
+
+std::istream& operator>>(std::istream& in, Bus& bus)
+{
+    in >> bus.number >> bus.name >> bus.mileage>>bus.maxPassengers;
+    return in;
 }
