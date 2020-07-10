@@ -20,10 +20,17 @@ public:
     void setName(std::string _name) { name = _name; }
     void setCost(double _km) { km = _km; }
     friend std::istream& operator>>(std::istream&, Route&);
+    friend std::ostream& operator<<(std::ostream&, const Route&);
 };
 
 std::istream& operator>>(std::istream& in, Route& route)
 {
     in >> route.name >> route.start >> route.finish >> route.km >> route.cost;
     return in;
+}
+
+std::ostream& operator<<(std::ostream& out, const Route& route)
+{
+    out << "Name: " << route.name << " Start: " <<  route.start << " Finish: " << route.finish << " KM: " << route.km << " Cost: " << route.cost;
+    return out;
 }

@@ -17,4 +17,11 @@ public:
     void setDataFinish(std::string date) { dateFinish = date; }
     void setCountPassengers(size_t count) { countPassengers = count; }
     bool operator==(const DoneRoutes&) const;
+    friend std::ostream& operator<<(std::ostream& out, const DoneRoutes& done);
 };
+
+std::ostream& operator<<(std::ostream& out, const DoneRoutes& temp)
+{
+    out << "Cost: " << temp.getCost() << " Name of route: " << temp.getName() << " Number: " << temp.getNumber() << " Date start: " << temp.dateStart << " Date finish: " << temp.dateFinish << " Count passengers: " << temp.getCountPassengers();
+    return out;
+}
